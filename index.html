@@ -15,13 +15,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <header class="header">
       <div class="container div-row">
-        <a class="header-logo" href="index.html"><span class="header-logo-highlighted">Web</span>Studio</a>
+        <a class="header-logo" href="index.html">
+          <span class="header-logo-highlighted">Web</span>
+          Studio
+        </a>
 
         <nav class="nav">
           <ul class="site-nav">
@@ -42,13 +45,17 @@
             <a class="contacts-link" href="mailto:info@devstudio.com">
               <svg class="icon-envelope" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
-              </svg>info@devstudio.com</a>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="contacts-item">
             <a class="contacts-link" href="tel:+380961111111">
               <svg class="icon-smartphone" width="15" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
-              </svg>+38 096 111 11 11</a>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -76,7 +83,7 @@
               <h3 class="peculiarity-title">Внимание к деталям</h3>
               <p class="peculiarity-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            
+
             <li class="peculiarity-item">
               <div class="peculiarity-divs-icons">
                 <svg class="icon-clock" width="70" height="70">
@@ -138,7 +145,7 @@
           <ul class="our-team">
             <li class="our-team-item">
               <img src="./images/img1.jpg" alt="Фото Игоря Демьяненка" width="270" />
-              
+
               <div class="our-team-item-div">
                 <h3 class="our-team-title">Игорь Демьяненко</h3>
                 <p class="our-team-text">Product Designer</p>
@@ -334,7 +341,7 @@
                 <svg class="icon-foster-peters" width="106" height="60">
                   <use href="./images/icons.svg#foster-peters"></use>
                 </svg>
-              </a>  
+              </a>
             </li>
             <li class="regular-customers-company-item">
               <a class="regular-customers-company-link" href="">
@@ -358,18 +365,25 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="address-div">
-          <a class="footer-logo" href="./index.html"><span class="footer-logo-highlighted">Web</span>Studio</a>
+          <a class="footer-logo" href="./index.html">
+            <span class="footer-logo-highlighted">Web</span>
+            Studio
+          </a>
           <address class="address">
             <ul class="address-list">
               <li class="address-list-item">г. Киев, пр-т Леси Украинки, 26</li>
-              <li class="address-list-item"><a class="address-list-link" href="mailto:info@example.com">info@example.com</a></li>
-              <li class="address-list-item"><a class="address-list-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+              <li class="address-list-item">
+                <a class="address-list-link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="address-list-item">
+                <a class="address-list-link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
             </ul>
           </address>
         </div>
 
         <div class="come-join">
-          <h2 class="come-join-title">присоединяйтесь</h2>
+          <b class="come-join-title">присоединяйтесь</b>
           <ul class="come-join-list">
             <li class="come-join-item">
               <a class="come-join-link" href="">
@@ -392,7 +406,7 @@
                 </svg>
               </a>
             </li>
-            <li class="come-join-item" >
+            <li class="come-join-item">
               <a class="come-join-link" href="">
                 <svg class="icon-linkedin-footer" width="20" height="20">
                   <use href="./images/icons.svg#linkedin"></use>
@@ -400,6 +414,21 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="join">
+          <b class="join-b">Подпишитесь на рассылку</b>
+          <div class="join-div">
+            <label class="join-label">
+              <input class="join-input" type="email" placeholder="E-mail" name="email-for-our-newsletter" />
+            </label>
+            <button class="join-btn" type="submit">
+              Подписаться
+              <svg class="join-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
@@ -411,11 +440,63 @@
             <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
+
+        <div role="group" aria-labelledby="contact-details-head" class="modal-form">
+          <b class="modal-slogan">Оставьте свои данные, мы вам перезвоним</b>
+          <li class="modal-form-item">
+            <label class="modal-form-label">
+              Имя
+              <input class="modal-form-input" type="name" name="name" />
+              <svg class="icon-modal-form person-black" width="20" height="20">
+                <use href="./images/icons.svg#person-black"></use>
+              </svg>
+            </label>
+          </li>
+
+          <li class="modal-form-item">
+            <label class="modal-form-label">
+              Телефон
+              <input class="modal-form-input" type="tel" name="tel" />
+              <svg class="icon-modal-form phone-black" width="20" height="20">
+                <use href="./images/icons.svg#phone-black"></use>
+              </svg>
+            </label>
+          </li>
+
+          <li class="modal-form-item">
+            <label class="modal-form-label">
+              Почта
+              <input class="modal-form-input" type="email" name="email" />
+              <svg class="icon-modal-form email-black" width="20" height="20">
+                <use href="./images/icons.svg#email-black"></use>
+              </svg>
+            </label>
+          </li>
+
+          <li class="modal-form-item">
+            <label class="modal-form-label">
+              Комментарий
+              <textarea class="modal-form-comment" placeholder="Введите текст" name="comment"></textarea>
+            </label>
+          </li>
+
+          <li class="modal-form-item-agree">
+            <label class="modal-form-label-agree">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="modal-form-link-agree" href="#">Условия договора</a>
+              <input class="modal-form-input-agree" type="checkbox" name="i-agree-and-accept" />
+              <svg class="icon icon-check" width="20" height="20">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+              <span class=""></span>
+            </label>
+          </li>
+        </div>
+
+        <button class="modal-form-btn" type="submit">Отправить</button>
       </div>
     </div>
 
-
     <script src="./js/modal.js"></script>
   </body>
-
 </html>
