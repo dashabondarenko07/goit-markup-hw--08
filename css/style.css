@@ -455,7 +455,7 @@ body {
   margin-left: 70px;
 }
 .come-join-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 0.9;
   letter-spacing: 0.03em;
@@ -488,7 +488,7 @@ body {
 .join {
   display: flex;
   flex-direction: column;
-  margin-left: 93px;
+  margin-left: auto;
   color: currentColor;
 }
 .join-b {
@@ -534,7 +534,8 @@ body {
 .join-btn-icon {
   position: absolute;
   right: 28px;
-  top: 13px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* portfolio */
@@ -773,7 +774,6 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
-
   display: inline-block;
 }
 .modal-form-input-agree {
@@ -787,7 +787,7 @@ body {
   overflow: hidden;
 }
 
-.modal-form-input-icon {
+/* .modal-form-input-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -795,16 +795,17 @@ body {
   left: 13px;
   top: 5px;
   fill: #757575;
-}
+} */
 .icon {
-  display: inline-block;
+ display: inline-block;
   width: 16px;
   height: 15px;
   border: 2px solid #757575;
   border-radius: 4px;
   position: absolute;
   left: 13px;
-  top: 3px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .modal-form-input-agree:checked + .icon {
   background-color: var(--blue-color);
@@ -828,5 +829,5 @@ body {
   display: flex;
   margin: 0 auto;
   margin-top: 30px;
-  /* border: 0; */
+
 }
