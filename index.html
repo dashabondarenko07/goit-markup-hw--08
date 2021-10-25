@@ -416,7 +416,7 @@
           </ul>
         </div>
 
-        <div class="join">
+        <form class="join">
           <b class="join-b">Подпишитесь на рассылку</b>
           <div class="join-div">
             <label class="join-label">
@@ -429,10 +429,11 @@
               </svg>
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </footer>
-
+    
+<!-- form -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button btn-cursor" data-modal-close>
@@ -441,59 +442,48 @@
           </svg>
         </button>
 
-        <div role="group" aria-labelledby="contact-details-head" class="modal-form">
+        <form class="modal-form">
           <b class="modal-slogan">Оставьте свои данные, мы вам перезвоним</b>
-          <li class="modal-form-item">
-            <label class="modal-form-label">
-              Имя
-              <input class="modal-form-input" type="name" name="name" />
-              <svg class="icon-modal-form person-black" width="20" height="20">
-                <use href="./images/icons.svg#person-black"></use>
-              </svg>
-            </label>
-          </li>
+          <label class="modal-form-label">
+            Имя
+            <input class="modal-form-input" type="name" name="name" />
+            <svg class="icon-modal-form person-black" width="20" height="20">
+              <use href="./images/icons.svg#person-black"></use>
+            </svg>
+          </label>
 
-          <li class="modal-form-item">
-            <label class="modal-form-label">
-              Телефон
-              <input class="modal-form-input" type="tel" name="tel" />
-              <svg class="icon-modal-form phone-black" width="20" height="20">
-                <use href="./images/icons.svg#phone-black"></use>
-              </svg>
-            </label>
-          </li>
+          <label class="modal-form-label">
+            Телефон
+            <input class="modal-form-input" type="tel" name="tel" />
+            <svg class="icon-modal-form phone-black" width="20" height="20">
+              <use href="./images/icons.svg#phone-black"></use>
+            </svg>
+          </label>
 
-          <li class="modal-form-item">
-            <label class="modal-form-label">
-              Почта
-              <input class="modal-form-input" type="email" name="email" />
-              <svg class="icon-modal-form email-black" width="20" height="20">
-                <use href="./images/icons.svg#email-black"></use>
-              </svg>
-            </label>
-          </li>
+          <label class="modal-form-label">
+            Почта
+            <input class="modal-form-input" type="email" name="email" />
+            <svg class="icon-modal-form email-black" width="20" height="20">
+              <use href="./images/icons.svg#email-black"></use>
+            </svg>
+          </label>
 
-          <li class="modal-form-item">
-            <label class="modal-form-label">
-              Комментарий
-              <textarea class="modal-form-comment" placeholder="Введите текст" name="comment"></textarea>
-            </label>
-          </li>
+          <label class="modal-form-label">
+            Комментарий
+            <textarea class="modal-form-comment" placeholder="Введите текст" name="comment"></textarea>
+          </label>
 
-          <li class="modal-form-item-agree">
-            <label class="modal-form-label-agree">
-              Соглашаюсь с рассылкой и принимаю
-              <a class="modal-form-link-agree" href="#">Условия договора</a>
-              <input class="modal-form-input-agree" type="checkbox" name="i-agree-and-accept" />
-              <svg class="icon icon-check" width="20" height="20">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
-              <span class=""></span>
-            </label>
-          </li>
-        </div>
+          <label class="modal-form-label-agree">
+            <input class="modal-form-input-agree" type="checkbox" name="i-agree-and-accept" />
+            <svg class="icon icon-check" width="20" height="20">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+            Соглашаюсь с рассылкой и принимаю
+            <a class="modal-form-link-agree" href="#">Условия договора</a>
+          </label>
 
-        <button class="modal-form-btn" type="submit">Отправить</button>
+          <button class="modal-form-btn btn-cursor" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
 
