@@ -1,0 +1,39 @@
+.customers {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.9;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: $black-red-color;
+}
+.customers-list {
+  display: flex;
+}
+.customers-item {
+  width: 170px;
+  height: 92px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.customers-item .customers-link {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  fill: #afb1b8;
+  transition: border $transition-times $cubic-bezier, fill $transition-times $cubic-bezier;
+}
+.customers-link{
+  &:hover,
+  &:focus {
+  border: 1px solid $blue-color;
+  fill: $blue-color;
+}
+}

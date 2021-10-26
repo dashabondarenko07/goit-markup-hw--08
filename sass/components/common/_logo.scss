@@ -1,0 +1,24 @@
+.header-logo {
+  text-decoration: none;
+  color: #000;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  display: block;
+  align-self: center;
+  margin-right: 93px;
+}
+.logo-highlighted {
+  color: $blue-color;
+}
+.footer-logo {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-family: $secondary-font;
+}

@@ -1,0 +1,30 @@
+.peculiarity {
+  display: flex;
+}
+.peculiarity-item:not(:last-child) {
+  margin-right: 30px;
+}
+.peculiarity-icons {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.peculiarity-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $black-red-color;
+  margin-bottom: 10px;
+}
+.peculiarity-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $black-gray-color;
+}

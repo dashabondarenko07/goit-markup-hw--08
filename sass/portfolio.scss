@@ -1,0 +1,27 @@
+@import './utils/variables';
+@import './utils/zz';
+// header
+@import './components/header/header-page';
+@import './components/header/nav';
+@import './components/header/contacts';
+
+// main
+// filter
+@import './components/portfolio-main/filter';
+// projects
+@import './components/portfolio-main/projects';
+
+// footer
+// footer
+@import './components/footer/footer-page';
+// address
+@import './components/footer/address';
+// socials
+@import './components/footer/socials';
+// join
+@import './components/footer/join';
+
+// common
+@import './components/common/logo';
+
+

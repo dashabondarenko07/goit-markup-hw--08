@@ -1,0 +1,27 @@
+.address {
+  margin-top: 20px;
+}
+.address-list {
+  font-style: normal;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.address-item {
+  &:not(:first-child) {
+    margin-top: 9px;
+  }
+}
+.address-link {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color $transition-times $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+}

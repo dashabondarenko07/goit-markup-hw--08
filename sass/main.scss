@@ -1,0 +1,37 @@
+@import './utils/variables';
+@import './utils/zz';
+// header
+@import './components/header/header-page';
+@import './components/header/nav';
+@import './components/header/contacts';
+
+// main
+// hero
+@import './components/main/hero';
+// peculiarity
+@import './components/main/peculiarity';
+// our-works
+@import './components/main/out-works';
+// our-team
+@import './components/main/our-team';
+// customers
+@import './components/main/customers';
+
+// footer
+// footer
+@import './components/footer/footer-page';
+// address
+@import './components/footer/address';
+// socials
+@import './components/footer/socials';
+// join
+@import './components/footer/join';
+
+// form
+// backdrop
+@import "./components/form/backdrop";
+// modal
+@import "./components/form/modal";
+
+// common
+@import './components/common/logo';

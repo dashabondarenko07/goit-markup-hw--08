@@ -1,0 +1,33 @@
+
+.socials-section {
+  margin-left: 70px;
+}
+.socials-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.9;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.socials-list {
+  display: flex;
+  margin-top: 20px;
+}
+.socials-item:not(:first-child) {
+  margin-left: 10px;
+}
+.socials-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #fff;
+  transition: background-color $transition-times $cubic-bezier;
+    &:hover,&:focus {
+  background-color: $blue-color;
+}
+}
