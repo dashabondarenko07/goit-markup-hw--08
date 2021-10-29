@@ -5,26 +5,20 @@
   margin-right: 30px;
 }
 .peculiarity-icons {
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 120px;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .peculiarity-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $black-red-color;
   margin-bottom: 10px;
+  @include text(#212121, 700);
+  text-transform: uppercase;
 }
 .peculiarity-text {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: $black-gray-color;
+  @include text(#757575, $height: 1.7);
 }

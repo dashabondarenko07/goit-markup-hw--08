@@ -5,23 +5,17 @@
   margin-right: 50px;
 }
 .contacts-link {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  color: #757575;
-  padding: 10px 0;
   display: flex;
   align-items: center;
-  transition: color $transition-times $cubic-bezier;
+  @include text(#757575, 500, $spacing: 0.02em);
+  @include transition();
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
 }
-.icon-envelope,
-.icon-smartphone {
+.icon-header {
   fill: currentColor;
   margin-right: 10px;
-}
-.contacts-link:hover,
-.contacts-link:focus {
-  color: $blue-color;
 }

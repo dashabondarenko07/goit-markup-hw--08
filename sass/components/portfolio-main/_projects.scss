@@ -4,14 +4,17 @@
   margin-top: -30px;
   margin-left: -30px;
 }
-.projects > .projects-item {
-  flex-basis: calc(100% / 3 - 30px);
-}
 .projects-item {
   margin: 30px 0 0 30px;
+
+  .projects > & {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 .projects-link {
   display: block;
+  background: #ffffff;
+
   &:hover,
   &:focus {
     display: inline-block;
@@ -28,10 +31,10 @@
   left: 0;
   width: 100%;
   height: auto;
-  background-color: rgba(33, 150, 243, 0.9);
   padding: 64px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: transform $transition-times ease;
+  @include transition(transform, ease);
 
   .projects-link:hover &,
   .projects-link:focus & {
@@ -39,31 +42,19 @@
   }
 }
 .overlay-text {
-  color: #fff;
-  text-align: left;
-  font-size: 18px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
+  @include text(#fff, $size: 18px, $height: 1.6);
 }
 .projects-desc {
   padding: 20px 24px;
-  background: #fff;
   box-sizing: border-box;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
 }
 .projects-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: $black-red-color;
   margin-bottom: 4px;
+  @include text(#212121, 700, 18px, 2, 0.06em);
 }
 .projects-text {
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
-  color: $black-gray-color;
+  @include text(#757575, $size: 16px, $height: 1.9);
 }

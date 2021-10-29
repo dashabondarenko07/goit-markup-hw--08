@@ -1,5 +1,8 @@
 @import './utils/variables';
-@import './utils/zz';
+@import './utils/base';
+@import './utils/mixin';
+
+@import './components/common/logo';
 // header
 @import './components/header/header-page';
 @import './components/header/nav';
@@ -13,11 +16,16 @@
 // our-works
 @import './components/main/out-works';
 // our-team
-@import './components/main/our-team';
+@import './components/main/team';
 // customers
 @import './components/main/customers';
 
-// footer
+// main-portfolio
+// filter
+@import './components/portfolio-main/filter';
+// projects
+@import './components/portfolio-main/projects';
+
 // footer
 @import './components/footer/footer-page';
 // address
@@ -29,9 +37,6 @@
 
 // form
 // backdrop
-@import "./components/form/backdrop";
+@import './components/form/backdrop';
 // modal
-@import "./components/form/modal";
-
-// common
-@import './components/common/logo';
+@import './components/form/modal';
