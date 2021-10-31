@@ -1,42 +1,13 @@
-@import './utils/variables';
-@import './utils/base';
-@import './utils/mixin';
+// style
+@import './base/im-base';
+@import './abstracts/im-abstracts';
 
-@import './components/common/logo';
-// header
-@import './components/header/header-page';
-@import './components/header/nav';
-@import './components/header/contacts';
+// layout
+@import './layout/header/im-header';
+@import './layout/footer/im-footer';
 
-// main
-// hero
-@import './components/main/hero';
-// peculiarity
-@import './components/main/peculiarity';
-// our-works
-@import './components/main/out-works';
-// our-team
-@import './components/main/team';
-// customers
-@import './components/main/customers';
-
-// main-portfolio
-// filter
-@import './components/portfolio-main/filter';
-// projects
-@import './components/portfolio-main/projects';
-
-// footer
-@import './components/footer/footer-page';
-// address
-@import './components/footer/address';
-// socials
-@import './components/footer/socials';
-// join
-@import './components/footer/join';
-
-// form
-// backdrop
-@import './components/form/backdrop';
-// modal
-@import './components/form/modal';
+// components
+@import './components/logo';
+@import './components/studio-main/im-studio-main';
+@import './components/portfolio-main/im-portfolio-main';
+@import './components/form/im-form';
