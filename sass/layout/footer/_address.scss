@@ -3,10 +3,10 @@
   font-style: normal;
   @include text(#fff, $height: 1.7);
 }
-.address-item:not(:first-child) {
+.address__item:not(:first-child) {
   margin-top: 9px;
 }
-.address-link {
+.address__link {
   color: rgba(255, 255, 255, 0.6);
   @include transition();
 

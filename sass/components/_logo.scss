@@ -2,12 +2,12 @@
   @include text(#000, 700, 26px, 1.2);
   font-family: $secondary-font;
 }
-.header-logo {
+.logo__header {
   margin-right: 93px;
 }
-.logo-highlighted {
+.logo__highlighted {
   color: #2196f3;
 }
-.footer-logo {
+.logo__footer {
   color: #fff;
 }

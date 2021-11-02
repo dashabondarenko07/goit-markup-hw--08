@@ -1,4 +1,4 @@
-.hero-section {
+.hero {
   max-width: 1600px;
   margin: 0 auto;
   padding: 200px 0;
@@ -8,18 +8,21 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero-title {
+.hero__title {
   width: 696px;
   margin: 0 auto 30px;
   @include text(#fff, 900, 44px, 1.4, 0.06em);
   text-align: center;
   text-transform: uppercase;
 }
-.hero-btn {
+.hero__btn {
   display: flex;
   padding: 10px 32px;
   margin: 0 auto;
-  @include btn();
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: #2196f3;
   @include text(#fff, 700, 16px, 1.9, 0.06em);
   font-family: $principal-font;
 }

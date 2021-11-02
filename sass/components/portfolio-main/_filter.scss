@@ -1,16 +1,19 @@
-.filter {
+.filter-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.filter-item {
+.filter-list__item {
   &:not(:last-child) {
     margin-right: 8px;
   }
 }
-.filter-btn {
+.filter-list__btn {
   padding: 6px 22px;
-  @include btn(none, $background: #f5f4fa);
+  border: 0;
+  border-radius: 4px;
+  background: #f5f4fa;
+  cursor: pointer;
   @include text(#212121, 500, 16px, 1.6);
   text-align: center;
   transition: color $duration $timing-function, background-color $duration $timing-function;

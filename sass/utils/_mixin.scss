@@ -1,0 +1,15 @@
+@mixin text($color: #000, $weight: normal, $size: 14px, $height: 1.1, $spacing: 0.03em) {
+  color: $color;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+  // @include text(#2f303a,);
+}
+
+@mixin transition($name: color, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition-property: $name;
+  transition-duration: 250ms;
+  transition-timing-function: $transition-timing-function;
+  //   @include transition(color);
+}

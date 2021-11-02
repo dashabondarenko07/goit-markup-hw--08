@@ -1,15 +1,15 @@
-.join {
+.join-form {
   margin-left: 94px;
 }
-.join-slogan {
+.join-form__slogan {
   @include text(currentColor, 700);
   text-transform: uppercase;
 }
-.join-div {
+.join-form-container {
   display: flex;
   margin-top: 20px;
 }
-.join-input {
+.join-form-container__input {
   padding: 15px 16px;
   width: 358px;
   height: 50px;
@@ -19,7 +19,7 @@
   @include text(currentColor, $size: 16px, $height: 1.3);
   background: #2f303a;
 }
-.join-btn {
+.join-form-btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -27,8 +27,12 @@
   height: 50px;
   margin-left: 12px;
   @include text(currentColor, 700, 16px, 1.9, 0.06em);
-  @include btn();
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: #2196f3;
+  cursor: pointer;
 }
-.join-btn-icon {
+.join-form-btn__icon {
   margin-left: 10px;
 }

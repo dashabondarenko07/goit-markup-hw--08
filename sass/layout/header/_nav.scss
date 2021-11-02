@@ -4,14 +4,14 @@
 .nav-list {
   display: flex;
 }
-.nav-item {
+.nav-list__item {
   padding: 32px 0;
 
   &:not(:last-child) {
     margin-right: 50px;
   }
 }
-.nav-link {
+.nav-list__link {
   padding: 32px 0;
   @include transition();
   @include text(#212121, 500, $spacing: 0.02em);
@@ -21,7 +21,7 @@
     color: #2196f3;
   }
 }
-.nav-backlight {
+.nav-list__backlight {
   color: #2196f3;
   position: relative;
 

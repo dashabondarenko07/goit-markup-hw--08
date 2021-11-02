@@ -9,36 +9,38 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.modal-close {
+.modal__btn__close {
   position: absolute;
   right: 8px;
   top: 8px;
   width: 31px;
   height: 30px;
-  @include btn(none, 50%, 1px solid rgba(0, 0, 0, 0.1));
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   background: #fff;
   fill: #000;
   @include transition(fill);
+  cursor: pointer;
 
   &:hover {
     fill: #2196f3;
   }
 }
-.modal-slogan {
+.modal__slogan {
   margin-bottom: 12px;
   display: inline-block;
   @include text(#212121, 700, 20px, 1.2);
   text-align: center;
 }
-.modal-label {
+.modal__label {
   position: relative;
   display: inline-block;
   @include text(#757575, $size: 12px, $height: 1.2, $spacing: 0.01em);
 }
-.modal-label-geometry {
+.modal__label__geometry {
   margin-bottom: 10px;
 }
-.modal-input {
+.modal__input {
   margin-top: 4px;
   box-sizing: border-box;
   height: 40px;
@@ -53,11 +55,11 @@
     outline: none;
   }
 }
-.modal-input-geometry {
+.modal__input__geometry {
   padding-left: 42px;
   margin-top: 10px;
 }
-.icon-modal {
+.icon__modal {
   position: absolute;
   left: 12px;
   bottom: 11px;
@@ -67,27 +69,34 @@
   fill: #000;
   @include transition(fill);
 
-  .modal-input:focus + & {
+  .modal__input:focus + & {
     fill: #2196f3;
   }
 }
-.modal-input-comment {
+.modal__input__comment {
   padding: 12px 16px;
   height: 120px;
   resize: none;
   @include text(#757575, $size: 12px, $height: 1.2, $spacing: 0.01em);
 }
-.modal-label-agree {
+.modal__input__agree {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.modal__label__agree {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
   @include text(#757575, $size: 14px, $height: 1.7);
 }
-.modal-input-agree {
-
-}
-.icon-check {
+.icon__modal__check {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -95,20 +104,24 @@
   border: 2px solid $black-gray-color;
   border-radius: 4px;
 
-  .modal-input-agree:checked + & {
+  .modal__input__agree:checked + & {
     background-color: $blue-color;
     border-color: $blue-color;
   }
 }
-.modal-link {
+.modal__link {
   color: #2196f3;
   text-decoration: underline;
 }
-.modal-submit {
+.modal__btn__submit {
   display: flex;
   margin: 0 auto;
   margin-top: 30px;
   padding: 10px 56px;
   @include text(#fff, 700, 16px, 1.9, 0.06em);
-  @include btn();
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: #2196f3;
+  cursor: pointer;
 }

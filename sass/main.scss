@@ -1,12 +1,12 @@
 // style
 @import './base/im-base';
-@import './abstracts/im-abstracts';
+@import './utils/im-utils';
 
 // layout
 @import './layout/header/im-header';
 @import './layout/footer/im-footer';
 
-// components
+// // components
 @import './components/logo';
 @import './components/studio-main/im-studio-main';
 @import './components/portfolio-main/im-portfolio-main';

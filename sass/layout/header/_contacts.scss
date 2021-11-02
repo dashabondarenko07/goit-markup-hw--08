@@ -1,10 +1,10 @@
-.contacts {
+.contacts-list {
   display: flex;
 }
-.contacts-item:not(:last-child) {
+.contacts-list__item:not(:last-child) {
   margin-right: 50px;
 }
-.contacts-link {
+.contacts-list__link {
   display: flex;
   align-items: center;
   @include text(#757575, 500, $spacing: 0.02em);
@@ -15,7 +15,7 @@
     color: #2196f3;
   }
 }
-.icon-header {
+.icon__header {
   fill: currentColor;
   margin-right: 10px;
 }

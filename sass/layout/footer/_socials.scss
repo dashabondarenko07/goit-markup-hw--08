@@ -1,7 +1,7 @@
-.socials-section {
+.socials-container {
   margin-left: 70px;
 }
-.socials-title {
+.socials-container__title {
   @include text(#fff, 700, $height: 0.9);
   text-transform: uppercase;
 }
@@ -9,17 +9,22 @@
   display: flex;
   margin-top: 20px;
 }
-.socials-item {
+.socials-list__item {
   width: 44px;
   height: 44px;
   &:not(:first-child) {
     margin-left: 10px;
   }
 }
-.socials-link {
+.socials-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
   background: rgba(255, 255, 255, 0.1);
   fill: #fff;
-  @include social-link();
+  border-radius: 50%;
   @include transition(background-color);
 
   &:hover,

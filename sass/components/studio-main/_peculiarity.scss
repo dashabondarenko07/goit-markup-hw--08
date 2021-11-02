@@ -1,10 +1,10 @@
-.peculiarity {
+.peculiarity-list {
   display: flex;
 }
-.peculiarity-item:not(:last-child) {
+.peculiarity-list__item:not(:last-child) {
   margin-right: 30px;
 }
-.peculiarity-icons {
+.peculiarity-list__icons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,11 +14,11 @@
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-.peculiarity-title {
+.peculiarity-list__title {
   margin-bottom: 10px;
   @include text(#212121, 700);
   text-transform: uppercase;
 }
-.peculiarity-text {
+.peculiarity-list__text {
   @include text(#757575, $height: 1.7);
 }
