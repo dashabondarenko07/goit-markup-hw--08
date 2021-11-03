@@ -1,0 +1,20 @@
+.grid-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.grid-list__item {
+  margin: 30px 0 0 30px;
+  flex-basis: calc(100% / - 30px);
+}
+.grid-list__link {
+  display: block;
+  background: #ffffff;
+
+  &:hover,
+  &:focus {
+    display: inline-block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
