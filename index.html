@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -14,7 +13,7 @@
       <div class="header__wrapper container">
         <a class="logo logo__header" href="index.html">
           <span class="logo__highlighted">Web</span>Studio
-        </a>
+        </a>  
 
         <nav class="nav">
           <ul class="nav-list">
@@ -48,11 +47,20 @@
             </a>
           </li>
         </ul>
+
+         <button
+          class="mobile-menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+        <svg width="40px" height="40px" aria-label="Переключатель мобильного меню" >
+          <use class="icon__menu-open" href="./images/icons.svg#btn-menu"></use>        </svg>
+        </button> 
+
       </div>
-    </header>
+    </header> 
 
     <main class="main">
-      <section class="hero">
+       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
@@ -113,30 +121,46 @@
           <ul class="works-list">
             <li class="works-list__item">
               <p class="works-list__text">Десктопные приложения</p>
-              <img src="./images/img(1).jpg" alt="Крупный план программиста" width="370" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/work370_1.jpg 1x, ./images/work370_1@2.jpg 2x" sizes="(min-width: 1200px) 1200px, 100vw">
+                <img   src="./images/projects_370_1.jpg" alt="Крупный план программиста" width="370" />
+              </picture>
             </li>
 
             <li class="works-list__item">
               <p class="works-list__text">Мобильные приложения</p>
-              <img src="./images/img(2).jpg" alt="Разработка интерфейса для телефонов" width="370" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/work370_2.jpg 1x, ./images/work370_2@2.jpg 2x" src="./images/projects_370_1.jpg" sizes="(min-width: 1200px) 1200px, 100vw">
+                <img  alt="Разработка интерфейса для телефонов" width="370" />
+              </picture>
+
             </li>
 
             <li class="works-list__item">
               <p class="works-list__text">Дизайнерские решения</p>
-              <img src="./images/img(3).jpg" alt="Подбор цвета" width="370" />
+             <picture>
+                <source media="(min-width: 1200px)" srcset="./images/work370_3.jpg 1x, ./images/work370_3@2.jpg 2x" sizes="(min-width: 1200px) 1200px, 100vw">
+               <img   src="./images/projects_370_1.jpg" alt="Подбор цвета" width="370" />
+            </picture>               
+
             </li>
           </ul>
         </div>
-      </section>
-
+      </section> 
+      
       <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list">
 
             <li class="team-list__item">
-              <img src="./images/img1.jpg" alt="Фото Игоря Демьяненка" width="270" />
-
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team_270_1.jpg 1x, ./images/team_270_1@2.jpg 2x" sizes="(min-width: 1200px) 1200px, 100vw">
+                <source media="(min-width: 768px)" srcset="./images/team_354_1.jpg 1x, ./images/team_354_1@2.jpg 2x" sizes="(min-width: 768px) 768px, 100vw">
+                <source media="(min-width: 480px)" srcset="./images/team_450_1.jpg 1x, ./images/team_450_1@2.jpg 2x" sizes="(min-width: 480px) 480px, 100vw">
+                <img  src="./images/team_270_1.jpg" alt="мужчина в красной рубашке"/>
+              </picture>
+                  
               <div class="team-desc">
                 <h3 class="team-desc__title">Игорь Демьяненко</h3>
                 <p class="team-desc__text">Product Designer</p>
@@ -177,7 +201,12 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/img2.jpg" alt="Фото Игоря Демьяненка" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team_270_2.jpg 1x, ./images/team_270_2@2.jpg 2x" sizes="(min-width: 1200px) 1200px, 100vw">
+                <source media="(min-width: 768px)" srcset="./images/team_354_2.jpg 1x, ./images/team_354_2@2.jpg 2x" sizes="(min-width: 768px) 768px, 100vw">
+                <source media="(min-width: 480px)" srcset="./images/team_450_2.jpg 1x, ./images/team_450_2@2.jpg 2x" sizes="(min-width: 480px) 480px, 100vw">
+                <img  src="./images/team_270_2.jpg" alt="мужчина в красной рубашке" />
+              </picture>
 
               <div class="team-desc">
                 <h3 class="team-desc__title">Ольга Репина</h3>
@@ -219,8 +248,13 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/img3.jpg" alt="Фото Игоря Демьяненка" width="270" />
-
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team_270_3.jpg 1x, ./images/team_270_3@2.jpg 2x" sizes="(min-width: 1200px) 1200px, 100vw">
+                <source media="(min-width: 768px)" srcset="./images/team_354_3.jpg 1x, ./images/team_354_3@2.jpg 2x" sizes="(min-width: 768px) 768px, 100vw">
+                <source media="(min-width: 480px)" srcset="./images/team_450_3.jpg 1x, ./images/team_450_3@2.jpg 2x" sizes="(min-width: 480px) 480px, 100vw">
+                <img  src="./images/team_270_3.jpg" alt="мужчина в красной рубашке"/>
+              </picture>
+                  
               <div class="team-desc">
                 <h3 class="team-desc__title">Николай Тарасов</h3>
                 <p class="team-desc__text">Marketing</p>
@@ -261,7 +295,12 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/img4.jpg" alt="Фото Игоря Демьяненка" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/team_270_4.jpg 1x, ./images/team_270_4@2.jpg 2x" sizes="(min-width: 1200px) 1200px, 100vw">
+                <source media="(min-width: 768px)" srcset="./images/team_354_4.jpg 1x, ./images/team_354_4@2.jpg 2x" sizes="(min-width: 768px) 768px, 100vw">
+                <source media="(min-width: 480px)" srcset="./images/team_450_4.jpg 1x, ./images/team_450_4@2.jpg 2x" sizes="(min-width: 480px) 480px, 100vw">
+                <img  src="./images/team_270_4.jpg" alt="мужчина в красной рубашке" />
+              </picture>
 
               <div class="team-desc">
                 <h3 class="team-desc__title">Михаил Ермаков</h3>
@@ -303,8 +342,8 @@
             </li>
           </ul>
         </div>
-      </section>
-
+      </section>  
+      
       <section class="section">
         <div class="container">
           <h2 class="customers__title">Постоянные клиенты</h2>
@@ -359,17 +398,17 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
     </main>
 
-    <footer class="footer">
+   <footer class="footer">
       <div class="footer__container container">
         <div>
           <a class="logo logo__footer" href="index.html">
             <span class="logo__highlighted">Web</span>Studio
           </a>
           <address class="address">
-            <ul>
+            <ul class="address-list">
               <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
               <li class="address__item">
                 <a class="address__link" href="mailto:info@example.com">info@example.com</a>
@@ -433,7 +472,7 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> 
 
     <!-- form -->
     <div class="backdrop is-hidden" data-modal>
@@ -444,52 +483,101 @@
           </svg>
         </button>
 
-        <form>
-          <b class="modal__slogan">Оставьте свои данные, мы вам перезвоним</b>
+        <form class="application-form">
+          <b class="application-form__slogan">Оставьте свои данные, мы вам перезвоним</b>
 
-          <label class="modal__label modal__label__geometry">
+          <label class="application-form__label application-form__label__geometry">
             Имя
-            <input class="modal__input modal__input__geometry" type="name" name="name" />
-            <svg class="icon__modal" width="20" height="20">
+            <input class="application-form__input application-form__input__geometry" type="name" name="name" />
+            <svg class="icon__application-form" width="20" height="20">
               <use href="./images/icons.svg#person-black"></use>
             </svg>
           </label>
 
-          <label class="modal__label modal__label__geometry">
+          <label class="application-form__label application-form__label__geometry">
             Телефон
-            <input class="modal__input modal__input__geometry" type="tel" name="tel" />
-            <svg class="icon__modal" width="20" height="20">
+            <input class="application-form__input application-form__input__geometry" type="tel" name="tel" />
+            <svg class="icon__application-form" width="20" height="20">
               <use href="./images/icons.svg#phone-black"></use>
             </svg>
           </label>
 
-          <label class="modal__label modal__label__geometry">
+          <label class="application-form__label application-form__label__geometry">
             Почта
-            <input class="modal__input modal__input__geometry" type="email" name="email" />
-            <svg class="icon__modal" width="20" height="20">
+            <input class="application-form__input application-form__input__geometry" type="email" name="email" />
+            <svg class="icon__application-form" width="20" height="20">
               <use href="./images/icons.svg#email-black"></use>
             </svg>
           </label>
 
-          <label class="modal__label">
+          <label class="application-form__label">
             Комментарий
-            <textarea class="modal__input modal__input__comment" placeholder="Введите текст" name="comment"></textarea>
+            <textarea class="application-form__input application-form__input__comment" placeholder="Введите текст" name="comment"></textarea>
           </label>
 
-          <label class="modal__label__agree">
-            <input class="modal__input__agree" type="checkbox" name="i-agree-and-accept" />
-            <svg class="icon__modal__check" width="20" height="20">
+          <label class="application-form__label__agree">
+            <input class="application-form__input__agree" type="checkbox" name="i-agree-and-accept" />
+            <svg class="icon__application-form__check" width="20" height="20">
               <use href="./images/icons.svg#icon-check"></use>
-            </svg>
-            Соглашаюсь с рассылкой и принимаю&nbsp;
-            <a class="modal__link" href="#">Условия договора</a>
-          </label>
+            </svg> 
+            <span class="application-form__text">
+              Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a class="application-form__link" href="#">Условия договора</a>
+             </span>   
+            </label>
 
-          <button class="modal__btn__submit" type="submit">Отправить</button>
-        </form>
+          <button class="application-form__btn__submit" type="submit">Отправить</button>      </div>
+    </div>
+
+    <div class="mobile-menu js-menu-container" >
+      <button class="mobile-menu__btn__close js-close-menu" type="button" >
+        <svg width="40px" height="40px">
+          <use href="./images/icons.svg#btn-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-nav-list">
+        <li class="mobile-menu-nav-list__item">
+          <a class="mobile-menu-nav-list__link mobile-menu-nav-list__backlight" href="./index.html">Студия</a>
+        </li>
+        <li class="mobile-menu-nav-list__item">
+          <a class="mobile-menu-nav-list__link" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobile-menu-nav-list__item">
+          <a class="mobile-menu-nav-list__link" href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <div class="connection-container">
+        <ul class="connection-contacts-list">
+          <li class="connection-contacts-list__item">
+            <a class="connection-contacts-list__link__phone" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="connection-contacts-list__item">
+            <a class="connection-contacts-list__link__e-mail" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="connection-social-list">
+          <li class="connection-social__item"><a href="" class="connection-social__link">Instagram</a></li>
+          <li class="connection-social__item"><a href="" class="connection-social__link">Twitter</a></li>
+          <li class="connection-social__item"><a href="" class="connection-social__link">Facebook</a></li>
+          <li class="connection-social__item"><a href="" class="connection-social__link">LinkedIn</a></li>
+        </ul>
       </div>
     </div>
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

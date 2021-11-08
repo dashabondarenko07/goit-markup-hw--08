@@ -3,11 +3,23 @@
   font-family: $secondary-font;
 }
 .logo__header {
-  margin-right: 93px;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 .logo__highlighted {
   color: #2196f3;
 }
 .logo__footer {
   color: #fff;
+  display: flex;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+  }
 }

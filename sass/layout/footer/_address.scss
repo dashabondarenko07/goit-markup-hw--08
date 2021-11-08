@@ -3,8 +3,20 @@
   font-style: normal;
   @include text(#fff, $height: 1.7);
 }
+.address-list {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+  }
+}
 .address__item:not(:first-child) {
-  margin-top: 9px;
+  margin-top: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 9px;
+  }
 }
 .address__link {
   color: rgba(255, 255, 255, 0.6);

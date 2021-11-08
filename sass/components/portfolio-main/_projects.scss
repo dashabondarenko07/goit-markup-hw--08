@@ -6,11 +6,13 @@
   position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
   width: 100%;
-  height: auto;
-  padding: 64px 24px;
+  height: 100%;
+  padding: 24px;
   background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(101%);
   @include transition(transform, ease);
 }
 .grid-list__link:hover .overlay,
@@ -18,7 +20,7 @@
   transform: translateY(0);
 }
 .overlay__text {
-  @include text(#fff, $size: 18px, $height: 1.6);
+  @include text(#fff, 400, 18px, 1.6);
 }
 .desc {
   padding: 20px 24px;

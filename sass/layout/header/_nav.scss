@@ -1,5 +1,9 @@
 .nav {
   margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .nav-list {
   display: flex;
@@ -12,13 +16,17 @@
   }
 }
 .nav-list__link {
-  padding: 32px 0;
+  padding: 33px 0;
   @include transition();
-  @include text(#212121, 500, $spacing: 0.02em);
+  @include text(#212121, 500, 14px, 1.1, 0.02em);
 
   &:hover,
   &:focus {
     color: #2196f3;
+  }
+
+  @media screen and (min-width:1200px) {
+    padding: 32px 0;
   }
 }
 .nav-list__backlight {

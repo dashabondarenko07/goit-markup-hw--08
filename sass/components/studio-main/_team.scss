@@ -2,15 +2,41 @@
   background-color: #f5f4fa;
 }
 .team__title {
-  margin-bottom: 50px;
-  @include text(#212121, 700, 36px, 1.2);
+  margin-bottom: 30px;
+  @include text(#212121, 700, 28px, 1.2);
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+    @media screen and (min-width: 768px) {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
-.team-list__item:not(:last-child) {
-  margin-right: 30px;
+.team-list__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 30px 0 0 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+    margin: 30px 0 0 30px;
+  }
 }
 .team-desc {
   padding: 30px 0;
@@ -27,30 +53,4 @@
   margin-bottom: 16px;
   @include text(#757575, $size: 16px, $height: 1.2);
   text-align: center;
-}
-.social-list {
-  display: flex;
-  justify-content: center;
-}
-.social-list__item:not(:last-child) {
-  margin-right: 10px;
-}
-.social-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 44px;
-  width: 44px;
-  color: #afb1b8;
-  border-radius: 50%;
-  transition: color $duration $timing-function, background-color $duration $timing-function;
-
-  &:hover,
-  &:focus {
-    color: #fff;
-    background-color: #2196f3;
-  }
-}
-.icon__social-list {
-  fill: currentColor;
 }
