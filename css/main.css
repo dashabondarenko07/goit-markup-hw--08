@@ -1254,8 +1254,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .grid-list__item {
-    -ms-flex-preferred-size: calc(100% / 4 - 30px);
-        flex-basis: calc(100% / 4 - 30px);
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
     margin: 30px 0 0 30px;
   }
 }
