@@ -31,9 +31,8 @@
   width: 100vw;
   padding: 48px 40px;
   background-color: #fff;
-  transform: translateX(-150%);  display: flex;
-  // align-items: center;
-
+  transform: translateX(150%);
+  @include transition(transform);
 }
 
 .mobile-menu.is-open {
@@ -48,14 +47,6 @@
 }
 .mobile-menu-nav-list__backlight {
   color: #2196f3;
-}
-
-.connection-container {
-  // position: absolute;
-  // left: 40px;
-  // bottom: 48px;  
-  // width: 320px;
-
 }
 
 .connection-contacts-list__item:not(:first-child) {
