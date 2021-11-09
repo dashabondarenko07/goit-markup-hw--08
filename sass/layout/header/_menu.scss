@@ -6,7 +6,8 @@
   border: none;
   background-color: transparent;
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: #2196f3;
   }
 

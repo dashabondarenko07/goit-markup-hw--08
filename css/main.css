@@ -84,8 +84,9 @@ body {
   background-color: transparent;
 }
 
-.mobile-menu-btn:hover,
-.mobile-menu__btn__close:hover {
+.mobile-menu-btn:hover, .mobile-menu-btn:focus,
+.mobile-menu__btn__close:hover,
+.mobile-menu__btn__close:focus {
   fill: #2196f3;
 }
 
