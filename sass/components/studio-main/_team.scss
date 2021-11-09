@@ -8,6 +8,7 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 .team-list {
@@ -21,6 +22,7 @@
   }
 }
 .team-list__item {
+  width: 100%;
   &:not(:last-child) {
     margin-bottom: 30px;
 
